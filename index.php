@@ -1,3 +1,5 @@
+  
+    
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -11,39 +13,68 @@
     </head>
     <body>
 
-    <main class="container">
+
     
         <div class="text-white text-center">
             <h1>Strong Password Generator</h1>
             <h2>Genera password sicura</h2>
         </div>  
-        
-        <div class="bg-white p-3 rounded d-flex justify-content-between">
 
-            <div class="left">
-                <p class="mb-3">Lunghezza password:</p>
-                <p>Consenti ripetizioni di uno o più caratteri:</p>
-                <div class="buttons">
-                    <button class="btn-primary btn">Invia</button>
-                    <button type="reset" class="btn btn-secondary">Annulla</button>
+        <main class="container bg-white"> 
+            
+            
+            <from class="row">
+
+                <div class="col-7 p-4">
+                    <label class="d-block mb-3" for="length">Lunghezza password:</label>
+                    <label for="repeatRadio" class="mb-5">Consenti ripetizioni di uno o piu' caratteri:</label>
+                    <div class="buttons mt-5 pt-5 mb-4">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                        <button type="reset" class="btn btn-secondary">Annulla</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="right">
+                <div class="col-5 p-3">
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control" id="length" name="length">
+                    </div>
 
-                <input type="number" class="form-control mb-3" id="length" name="length">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="repeat" id="repeat" value="1" checked>
+                        <label class="form-check-label" for="repeat">
+                            Si
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="repeat" id="repeat" value="0">
+                        <label class="form-check-label" for="repeat">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="lettere">
+                        <label class="form-check-label" for="flexCheckDefault" >
+                            Lettere
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckChecked" name="numeri">
+                        <label class="form-check-label" for="flexCheckChecked" >
+                            Numeri
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckChecked" name="simboli">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Simboli
+                        </label>
+                    </div>
+                </div>
 
-                <input class="form-check-input" type="radio" name="repeatRadio" id="repeatRadio" value="1" checked>
 
-                <label class="form-check-label" for="repeatRadio">
-                    Si
-                </label>
+            </from>
 
-            </div>
-
-        </div>
-
-    </main>
+        </main>
 
 
 
